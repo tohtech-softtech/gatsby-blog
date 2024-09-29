@@ -24,6 +24,16 @@ const BlogList = ({ data }) => {
   )
 }
 
+export function Head() {
+  return (
+    <>
+      <html lang="ja" />
+      <title>ブログ記事一覧 | ソフトウェア技術研究会</title>
+      <meta name="description" content="ブログ記事一覧" />
+    </>
+  );
+}
+
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(

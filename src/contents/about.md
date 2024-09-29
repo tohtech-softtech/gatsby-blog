@@ -1,6 +1,6 @@
 ---
 slug: ""
-title: "ソフトウェア技術研究会"
+title: "東北工業大学 ソフトウェア技術研究会"
 thumbnail: ../images/banner.png
 ---
 ## ソフトウェア技術研究会とは？
