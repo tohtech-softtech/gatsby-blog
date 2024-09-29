@@ -24,26 +24,27 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} /><div
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
+          backgroundColor: `var(--color-bg)`,
         }}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <main>{children}</main>
       </div>
+      <footer
+        style={{
+          textAlign: `center`,
+          marginTop: `var(--space-5)`,
+          fontSize: `var(--font-sm)`,
+          color: `var(--color-bg)`,
+          backgroundColor: `var(--color-text)`,
+        }}
+      >
+        © {new Date().getFullYear()} ソフトウェア技術研究会
+      </footer>
     </>
   )
 }
