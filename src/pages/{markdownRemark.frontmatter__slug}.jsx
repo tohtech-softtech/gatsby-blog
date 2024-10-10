@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 export default function BlogPostTemplate({
   data,
@@ -13,6 +14,7 @@ export default function BlogPostTemplate({
 
   return (
     <Layout>
+      <Head data={data} />
       {imageData ? <><GatsbyImage
         image={imageData}
         alt={frontmatter.title} /><br /><br /></> : null}
@@ -26,22 +28,8 @@ export default function BlogPostTemplate({
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </Layout>
-  )
-}
-
-export function Head({ data }) {
-  const { frontmatter } = data.markdownRemark;
-  return (
-    <>
-      <html lang="ja"></html>
-      {frontmatter.title === "東北工業大学 ソフトウェア技術研究会" 
-        ? <title>{frontmatter.title}</title> 
-        : <title>{frontmatter.title} | ソフトウェア技術研究会</title>
-      }
-      <meta name="description" content={frontmatter.description || frontmatter.excerpt} />
-    </>
   );
-}
+};
 
 export const pageQuery = graphql`
   query($id: String!) {
