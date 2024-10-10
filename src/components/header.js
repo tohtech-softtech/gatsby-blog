@@ -35,45 +35,41 @@ const Header = () => (
           alignContent: `center`,
         }}
       >
-        <li>
-          <Link
-            to="/works"
-            style={{
-              margin: `0 var(--space-3)`,
-              fontSize: `var(--font-sm)`,
-              textDecoration: `none`,
-            }}
-          >
-            制作物
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/article"
-            style={{
-              margin: `0 var(--space-3)`,
-              fontSize: `var(--font-sm)`,
-              textDecoration: `none`,
-            }}
-          >
-            ブログ
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            style={{
-              margin: `0 var(--space-3)`,
-              fontSize: `var(--font-sm)`,
-              textDecoration: `none`,
-            }}
-          >
-            入部・お問い合わせ
-          </Link>
-        </li>
+        <MenuBarItem
+          link="/works"
+          text="制作物"
+        ></MenuBarItem>
+
+        <MenuBarItem
+          link="/article"
+          text="ブログ"
+        ></MenuBarItem>
+  
+        <MenuBarItem
+          link="/contact"
+          text="入部・お問い合わせ"
+        ></MenuBarItem>
       </ul>
     </nav>
   </header>
 )
+
+
+const MenuBarItem = ({link, text}) => {
+  return (
+    <li>
+      <Link
+        to={link}
+        style={{
+          margin: `0 var(--space-3)`,
+          fontSize: `var(--font-sm)`,
+          textDecoration: `none`,
+        }}
+      >
+        {text}
+      </Link>
+    </li>
+  );
+};
 
 export default Header
