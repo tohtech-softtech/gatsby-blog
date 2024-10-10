@@ -4,21 +4,18 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-export default function BlogPostTemplate({
-  data,
-}) {
+export default function BlogPostTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  
   const imageData = frontmatter.thumbnail?.childImageSharp?.gatsbyImageData;
 
   return (
     <Layout>
       <Head data={data} />
-      {imageData ? <><GatsbyImage
-        image={imageData}
-        alt={frontmatter.title} /><br /><br /></> : null}
-      
+      {imageData 
+        ? <><GatsbyImage image={imageData} alt={frontmatter.title} /><br /><br /></> 
+        : null
+      }
       <h1>{frontmatter.title}</h1>
       {frontmatter.date === null
         ? null 
