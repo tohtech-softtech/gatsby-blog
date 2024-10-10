@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `東北工業大学 ソフトウェア技術研究会`,
+        short_name: `ソフトウェア技術研究会`,
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
