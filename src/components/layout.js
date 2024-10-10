@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -26,17 +27,7 @@ const Layout = ({ children }) => {
       >
       <main>{children}</main>
       </div>
-      <footer
-        style={{
-          textAlign: `center`,
-          marginTop: `var(--space-5)`,
-          fontSize: `var(--font-sm)`,
-          color: `var(--color-bg)`,
-          backgroundColor: `var(--color-text)`,
-        }}
-      >
-        © {new Date().getFullYear()} ソフトウェア技術研究会
-      </footer>
+      <Footer></Footer>
     </>
   )
 }
