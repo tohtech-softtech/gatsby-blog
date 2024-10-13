@@ -35,20 +35,9 @@ const Header = () => (
           alignContent: `center`,
         }}
       >
-        <MenuBarItem
-          link="/works"
-          text="制作物"
-        ></MenuBarItem>
-
-        <MenuBarItem
-          link="/article"
-          text="ブログ"
-        ></MenuBarItem>
-  
-        <MenuBarItem
-          link="/contact"
-          text="入部・お問い合わせ"
-        ></MenuBarItem>
+        <MenuBarItem link="/works" text="制作物" />
+        <MenuBarItem link="/article" text="ブログ" />
+        <MenuBarItem link="/contact" text="入部・お問い合わせ" />
       </ul>
     </nav>
   </header>
