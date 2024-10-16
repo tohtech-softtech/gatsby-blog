@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { Card } from "../components/card"
 
-export const BlogList: React.FC = ({ data }: any) => {
+const BlogList: React.FC = ({ data }: any) => {
   const posts = data.allMarkdownRemark.edges
   const imageData = data.thumbnail?.childImageSharp?.gatsbyImageData;
 
@@ -57,3 +57,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogList

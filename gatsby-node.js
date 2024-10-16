@@ -7,8 +7,8 @@
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
-export const createPages = async (prop: { actions: any }) => {
-  const { createPage } = prop.actions
+const createPages = async ({ actions }) => {
+  const { createPage } = actions
   createPage({
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
