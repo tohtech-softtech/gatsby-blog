@@ -1,4 +1,5 @@
 ---
+slug: "/article/0002"
 title: 自分のObsidianについて
 date: 2024-10-15
 created: 2024-10-15T16:33
