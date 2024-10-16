@@ -54,18 +54,11 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          `gatsby-remark-prismjs-title`,
+          `gatsby-remark-prismjs`,
           `@okaryo/gatsby-remark-link-card`,
         ],
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-prismjs-title`,
-          `gatsby-remark-prismjs`,
-        ]
-      },
-    }
   ],
 }
