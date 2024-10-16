@@ -1,8 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 
-const Card = ({ title, date, imageData, link }) => {
+interface Props{
+  title: string;
+  date: string;
+  imageData: IGatsbyImageData | null;
+  link: string;
+}
+
+export const Card: React.FC<Props> = ({ title, date, imageData, link }) => {
 
   return (
     <div className="card" style={{border: "1px solid #ddd", paddingLeft: `var(--space-4)`}}>
@@ -14,5 +21,3 @@ const Card = ({ title, date, imageData, link }) => {
     </div>
   )
 }
-
-export default Card
