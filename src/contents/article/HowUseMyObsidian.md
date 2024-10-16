@@ -99,7 +99,7 @@ const list = [
 このコードだけ、タグは空白を入れて反応しないようにしています。
 
 画像にするとこんな感じ
-![../../images/自分のObsidianについて-デイリーノート例.png|自分のObsidianについて-デイリーノート例.png](../../images/%E8%87%AA%E5%88%86%E3%81%AEObsidian%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%8E%E3%83%BC%E3%83%88%E4%BE%8B.png%7C%E8%87%AA%E5%88%86%E3%81%AEObsidian%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%8E%E3%83%BC%E3%83%88%E4%BE%8B.png)
+![自分のObsidianについて-デイリーノート例.png](../../images/0002/自分のObsidianについて-デイリーノート例.png)
 
 プロパティはまあ最小限って感じです。
 被っているものがあるのは見逃してください；；
@@ -293,7 +293,7 @@ DataViewも言わずもがなですが、自分でどう使用しているかを
 ### Excalidraw
 Excalidrawも言わずもがなですね。前述したとおり、図などを書いています。
 レポートで使用する回路図もこれで描いています。
-![20241007_02_infotech_dgdathk_circuit1_3.svg](20241007_02_infotech_dgdathk_circuit1_3.svg)
+![20241007_02_infotech_dgdathk_circuit1_3.svg](../../images/0002/20241007_02_infotech_dgdathk_circuit1_3.svg)
 
 ### floating toc
 このプラグインはノート左側に目次を出してくれるプラグインです。
