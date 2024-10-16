@@ -248,23 +248,11 @@ Writingが多いと気が滅入ってしまいます。
 
 ## 使用しているテーマなど
 テーマは`Ultra Lobster`というテーマをStyle Settingプラグインで改造して、使用しています。
-```cardlink
-url: https://github.com/7368697661/Ultra-Lobster
-title: "GitHub - 7368697661/Ultra-Lobster: Ultra Lobster offers a visually pleasing and comfortable working experience, with an emphasis on bringing rounded UI elements, modern design trends, and soft design choices to Obsidian."
-description: "Ultra Lobster offers a visually pleasing and comfortable working experience, with an emphasis on bringing rounded UI elements, modern design trends, and soft design choices to Obsidian. - 736869766..."
-host: github.com
-favicon: https://github.githubassets.com/favicons/favicon.svg
-image: https://opengraph.githubassets.com/09b3e9ea6ffc153446b01930a35ce4ff0c806667fdbbfb8cd24d15da190bf66d/7368697661/Ultra-Lobster
-```
+https://github.com/7368697661/Ultra-Lobster
+
 ただ、このテーマにはバグがあって、マウスで選択した範囲が強調されないという問題があります。
 これプルリク出したんですけど全然レビューしてくれないので使用する際には、自分からcssを直す必要があります。
-```cardlink
-url: https://github.com/7368697661/Ultra-Lobster/pull/41
-title: "add \",\" in line 7039 by Rerurate514 · Pull Request #41 · 7368697661/Ultra-Lobster"
-host: github.com
-favicon: https://github.githubassets.com/favicons/favicon.svg
-image: https://opengraph.githubassets.com/c98ad821448669a0119e841aaaf43981c6395d32d74a5bde083ca08eb0186616/7368697661/Ultra-Lobster/pull/41
-```
+https://github.com/7368697661/Ultra-Lobster/pull/41
 
 ただそれを直すと一番いいテーマだと思っています。
 結構リッチ目な感じ
