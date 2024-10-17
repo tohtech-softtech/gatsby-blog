@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Header = () => (
+export const Header = () => (
   <header
     style={{
       margin: `0 auto`,
@@ -44,21 +44,19 @@ const Header = () => (
 )
 
 
-const MenuBarItem = ({link, text}) => {
+const MenuBarItem = (props: {link: string, text: string}) => {
   return (
     <li>
       <Link
-        to={link}
+        to={props.link}
         style={{
           margin: `0 var(--space-3)`,
           fontSize: `var(--font-sm)`,
           textDecoration: `none`,
         }}
       >
-        {text}
+        {props.text}
       </Link>
     </li>
   );
 };
-
-export default Header
