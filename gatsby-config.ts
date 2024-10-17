@@ -54,6 +54,8 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          // SVG,GIFの表示用プラグイン
+          `gatsby-remark-static-images`,
           `gatsby-remark-prismjs-title`,
           `gatsby-remark-prismjs`,
           `@okaryo/gatsby-remark-link-card`,
